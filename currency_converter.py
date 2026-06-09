@@ -99,7 +99,7 @@ class CurrencyConverter:
         dol = float(val) / float(whichdol)
         res = dol * float(todol)
 
-        self.output_label.config(text=f"{res} {to}")
+        self.outputLabel.config(text=f"{res} {to}")
 
     def switchlang(self):
         global cur_lang
