@@ -3,17 +3,17 @@ import tkinter as tk
 currencyTemplates = [("USD",1,"United States Dollar"),("EUR",0.86,"Euro"),("SEK",9.28,"Swedish Krona"),("RUB",72.2,"Russian Ruble") ,("ZLO",0.86,"Polish Zloty")]
 
 
-lang_en = {
-    "cur_PLN": "Polish Zloty",
+lang_tr = {
+    "cur_PLN": "Polonya Zlotısı",
     "cur_EUR": "Euro",
-    "cur_USD": "United States Dollar",
-    "cur_RUB": "Russian Ruble",
-    "cur_SEK": "Swedish Krona",
-    "convertFrom": "Convert from",
-    "convertTo": "Convert to",
-    "convert": "Convert",
-    "curConvert": "Currency Converter",
-    "otherLang": "DE"
+    "cur_USD": "Amerikan Doları",
+    "cur_RUB": "Rus Rublesi",
+    "cur_SEK": "İsveç Kronası",
+    "convertFrom": "Dönüştür:",
+    "convertTo": "Hedef para birimi:",
+    "convert": "Dönüştür",
+    "curConvert": "Döviz Çevirici",
+    "otherLang": "TR"
 }
 
 lang_de = {
@@ -29,7 +29,7 @@ lang_de = {
     "otherLang": "EN"
 }
 
-cur_lang = lang_en
+cur_lang = lang_tr
 
 class Currency:
     def __init__(self, shortName, usdEquivavlent, longName):
@@ -104,7 +104,7 @@ class CurrencyConverter:
     def switchlang(self):
         global cur_lang
         if cur_lang == lang_de:
-            cur_lang = lang_en
+            cur_lang = lang_tr
         else:
             cur_lang = lang_de
 
